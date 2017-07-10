@@ -1,13 +1,19 @@
-main{
-  padding-left: 300px;
-}
-
-@media only screen and (max-width: 992px) {
-main{
-    padding-left: 0px;
-}
-
 .cover-img {
   width: 100%;
   height: auto;
+}
+
+.contrainer-content {
+  max-width: none;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 993px) .contrainer-content {
+  width: 70%;
+}
+
+@media only screen and (min-width: 601px) .contrainer-content {
+  width: 85%;
 }

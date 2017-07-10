@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
 
-  <main>
-    <div id="container">
+  <div class="contrainer-content">
     <div class="row">
 
       <?php
@@ -23,11 +22,10 @@
     <?php endwhile;?>
 
 
-    </div>
+  </div>
   </div>
 
 
-</main>
 
 
 </body>

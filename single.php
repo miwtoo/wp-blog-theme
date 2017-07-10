@@ -3,16 +3,14 @@
 <main <?php body_class()?>>
 
 	<!-- Post Thumbnail  -->
-	<?php the_post(); if (has_post_thumbnail()) { ?>
-	<div class="parallax-container">
-		<img class="parallax" src="<?php the_post_thumbnail_url()?>" style="  width: 100%; height: auto;">
-	</div>
-	<?php } ?>
 
 
-	<div class="section white" style="padding-left: 50px;">
+
 
 		<div class="row container">
+			<?php the_post(); if (has_post_thumbnail()) { ?>
+				<img src="<?php the_post_thumbnail_url()?>" style="  width: 100%; height: auto;">
+			<?php } ?>
 			<div class="title">
 				<h1><?php the_title();?></h1>
 				<p>Posted by
@@ -47,6 +45,5 @@
 				</ul>
 			</div>
 		</div>
-	</div>
 
 </main>

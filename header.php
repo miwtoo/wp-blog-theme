@@ -22,26 +22,31 @@
 
 
 
-
-  <header>
-    <!--<ul id="nav-mobile" class="side-nav fixed hide-on-med-and-down light-blue lighten-3">
-      <li class="center-align"><a href="/wp" ><?php bloginfo("name");?></a><p><?php bloginfo("description");?></p></li>
-      <li class="logo"><a href="/"></a></li>
-      <li class="search">
-        <div class="search-wrapper card">
-          <input id="search">
-          <i class="meterial-icons">search</i>
-          <div class="search-results"></div>
-        </div>
-      </li>
-      <li class="no-padding"><a href="#" class="waves-effect waves-teal"></a><?php wp_nav_menu( array('theme_locatin' => 'primary'));?></li>
-    </ul>-->
-
-		<div id="slide-out" class="side-nav fixed left-aligned light-blue lighten-4">
-
-        <center>
-					<a href="/wp" class="waves-effect waves-block waves-light"><?php bloginfo("name");?></a><p><?php bloginfo("description");?></p>
-          <?php wp_nav_menu( array('theme_locatin' => 'primary'));?>
-        </center>
+  <div class="contrainer-head">
+    <nav class="nav-extended">
+      <div class="nav-wrapper light-blue">
+        <a href="#" class="brand-logo center"><?php bloginfo("name");?></a>
       </div>
-  </header>
+      <div class="nav-content light-blue lighten-2 pin-top">
+        <ui class="tabs tabs-transparent">
+          <li class="tab"><?php wp_nav_menu( array('theme_locatin' => 'primary'));?></li>
+        </ui>
+      </div>
+    </nav>
+
+
+
+		<!--<ui id="slide-out" class="side-nav fixed left-aligned light-blue lighten-4">
+        <li><?php wp_nav_menu( array('theme_locatin' => 'primary'));?></li>
+        <li></li>
+    </ui>
+
+      <nav>
+        <div class="nav-wrapper light-blue">
+          <a href="#" class="brand-logo center"><?php bloginfo("name");?></a>
+          <ui id="nav-mobile" class="left">
+            <li> <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
+          </ui>
+        </div>
+      </nav>-->
+  </div>
