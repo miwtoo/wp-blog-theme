@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-  <div class="contrainer-content">
+  <div class="contrainer-card">
     <div class="row">
 
       <?php

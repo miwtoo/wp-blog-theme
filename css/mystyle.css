@@ -1,19 +1,50 @@
+@font-face {
+  font-family: "Lucida Grande";
+  src: url("../fonts/LucidaGrande/LucidaGrande-Bold.woff") format("woff"), url("../fonts/LucidaGrande/LucidaGrande-Bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .cover-img {
   width: 100%;
   height: auto;
 }
 
-.contrainer-content {
+.content,.title {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+
+@media only screen and (min-width: 601px) {
+  .content,.title {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .content,.title{
+    width: 900px;
+  }
+}
+
+
+
+.contrainer-card {
   max-width: none;
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
 }
 
-@media only screen and (min-width: 993px) .contrainer-content {
-  width: 70%;
+@media only screen and (min-width: 993px) {
+  .contrainer-card {
+    width: 70%;
+  }
 }
 
-@media only screen and (min-width: 601px) .contrainer-content {
-  width: 85%;
+@media only screen and (min-width: 601px) {
+  .contrainer-card {
+    width: 85%;
+  }
 }
