@@ -1,12 +1,27 @@
-(function($){
-  $(function(){
+$(window).load(function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
 
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
+    $('.portfolioFilter div').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
-
-$(document).ready(function(){
-  $('ul.tabs').tabs('select_tab', 'tab_id');
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    });
 });

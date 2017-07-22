@@ -4,7 +4,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 .cover-img {
   width: 100%;
   height: auto;
@@ -47,4 +46,9 @@
   .contrainer-card {
     width: 85%;
   }
+}
+
+.parallax-container {
+  width: 100%;
+  height: auto;
 }
